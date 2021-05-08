@@ -4,10 +4,12 @@ import * as types from './types'
 
 export interface State {
   message: string
+  list: types.list[]
 }
 
 const initialState = {
-  message: 'HELLO WORLD'
+  message: 'HELLO WORLD',
+  list: []
 }
 
 export const reducer = (state: State = initialState, action: AnyAction) => {
@@ -17,6 +19,10 @@ export const reducer = (state: State = initialState, action: AnyAction) => {
 
     case types.UPDATE_MESSAGE:
       return { ...state, message: action.payload }
+    
+    case types.UPDATE_LIST:
+      const newList = state.list.length ? state.list.concat(action.payload) : action.payload
+      return { ...state, list: newList }
   
     default:
       return state
