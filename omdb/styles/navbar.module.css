@@ -1,0 +1,12 @@
+.navbar {
+  width: 100%;
+  box-shadow: rgb(49 53 59 / 12%) 0px 1px 6px 0px;
+  background-color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  overflow: hidden;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

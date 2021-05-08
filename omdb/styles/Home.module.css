@@ -4,10 +4,58 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
-.main {
+.selectedButton {
+  display: flex;
+  justify-content: center;
+  /* margin: 2px; */
+}
+
+.selectedButton > div {
+  margin: 5rem;
+  box-shadow: rgb(49 53 59 / 12%) 0px 1px 25px 6px;
+  color: white;
+  /* background-color: rgb(136, 32, 32); */
+  /* margin: 20px; */
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  /* width: 100px; */
+}
+
+.searchBar > input {
+  width: 50vw;
+  padding: 0.5rem;
+  border: 2px solid black;
+  /* margin: 0.3rem; */
+  margin-right: 0.4rem;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.list > div {
+  margin: 1rem;
+  box-shadow: rgb(49 53 59 / 12%) 0px 1px 25px 6px;
+  background-color: rgb(255, 255, 255);
+  margin: 20px;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* .main {
   padding: 5rem 0;
   flex: 1;
   display: flex;
@@ -120,4 +168,4 @@
     width: 100%;
     flex-direction: column;
   }
-}
+} */
