@@ -1,10 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   background-color: #ffffff;
+  font-family: "Reggae One", cursive;
 }
 
 a {
@@ -14,4 +17,28 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.active-button-movie {
+  background-color: #fff !important;
+  color: red !important;
+  border: 1px solid red !important;
+}
+
+.active-button-series {
+  background-color: #fff !important;
+  color: blue !important;
+  border: 1px solid blue !important;
+}
+
+.active-button-episode {
+  background-color: #fff !important;
+  color: green !important;
+  border: 1px solid green !important;
+}
+
+.active-button-all {
+  background-color: #fff !important;
+  color: pink !important;
+  border: 1px solid pink !important;
 }
