@@ -27,15 +27,18 @@
 .searchBar {
   display: flex;
   justify-content: center;
-  /* width: 100px; */
+}
+
+.searchBar > button {
+  cursor: pointer;
 }
 
 .searchBar > input {
   width: 50vw;
   padding: 0.5rem;
   border: 2px solid black;
-  /* margin: 0.3rem; */
   margin-right: 0.4rem;
+  border-radius: 8px;
 }
 
 .list {
@@ -43,6 +46,7 @@
   justify-content: center;
   margin-top: 2rem;
   flex-wrap: wrap;
+  /* overflow-y: scroll; */
 }
 
 .list > div {
@@ -53,6 +57,10 @@
   padding: 1rem;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.detailDescription > div {
+  margin: 0 0 0.75rem 0;
 }
 
 /* .main {
