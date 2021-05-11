@@ -1,8 +1,9 @@
 import '../styles/globals.css'
 import { AppProps } from 'next/app'
 import React, { FC } from 'react'
-import { wrapper } from '../store'
+import { store } from '../store/store'
 import Head from 'next/head'
+import { Provider } from 'react-redux'
 
 import NProgress from 'nprogress'
 import Router from 'next/router'
@@ -27,9 +28,11 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout Component={Component} {...pageProps} />
+      <Provider store={store}>
+        <Layout Component={Component} {...pageProps} />
+      </Provider>
     </>
   )
 }
 
-export default wrapper.withRedux(App)
+export default App
